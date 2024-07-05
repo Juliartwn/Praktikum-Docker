@@ -1,0 +1,26 @@
+version: "3.8"
+
+networks:
+  laravel-docker:
+
+services:
+  nginx:
+    image: nginx
+    container_name: nginx-docker
+    ports:
+      - "83:80"
+    volumes:
+      - ./web/:/var/www/html
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - php
+    networks:
+      - laravel-docker
+
+  php:
+    image: php:8.2-fpm
+    container_name: php-docker
+    volumes:
+      - ./web/:/var/www/html
+    networks:
+      - laravel-docker
