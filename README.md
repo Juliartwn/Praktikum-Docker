@@ -1,3 +1,6 @@
+Nama: Kadek Juli Artawan
+NIM: 2215101030
+
 Hasil Pada Latihan Docker:
 ![Screenshot 2024-07-05 122540](https://github.com/Juliartwn/Praktikum-Docker/assets/127955383/ced89106-3248-4171-b46e-e877f2bcc1db)
 
